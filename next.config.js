@@ -3,7 +3,7 @@ const path= require('path')
 const nextConfig = {
     output: 'export',
     images: {
-        loader: "akamai",
+        loader: "default",
         path: "/img",
     }
 }
