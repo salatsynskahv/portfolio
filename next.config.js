@@ -2,7 +2,11 @@
 const path= require('path')
 const nextConfig = {
     output: 'export',
-    basePath: '/portfolio',
+    basePath: process.env.BASE_PATH
+    // assetPrefix: '/portfolio',
+    // images: {
+    //     path: '/portfolio/'
+    // }
 }
 
 module.exports = nextConfig

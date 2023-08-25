@@ -30,10 +30,10 @@ header {
 }
 
 
-
-
 .hero-section {
-  background: url("/img/hero-background.jpg") no-repeat center;
+  //background: url("/portfolio/img/hero-background.jpg") no-repeat center;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   opacity: 80%;
@@ -297,7 +297,8 @@ header {
 }
 
 footer {
-  background:  url("/img/footer.jpg") no-repeat center;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   height: 150px;
 }
