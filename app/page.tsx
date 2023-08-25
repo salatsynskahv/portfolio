@@ -8,7 +8,7 @@ export default function Home() {
                 {/*<base href={process.env.BASE_PATH} />*/}
             </Head>
             <main>
-                <section className="hero-section" style={{backgroundImage: `url(${process.env.BASE_PATH}/img/hero-background.jpg)`}}>
+                <section className="hero-section" style={{backgroundImage: `url(${process.env.BASE_PATH}/img/hero-background.png)`}}>
                     <header>
                     <span>
                         <a href="#projects-section">Projects </a>
