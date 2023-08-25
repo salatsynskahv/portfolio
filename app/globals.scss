@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css2?family=Julius+Sans+One&family=Mate+SC&display=swap);
+//@import url(//fonts.googleapis.com/css2?family=Julius+Sans+One&family=Mate&display=swap);
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +8,7 @@ $primary-color: #454b45;
 $secondary-green: #d9dada;
 $secondary-light-gray: #f0f0f0;
 $section-gray-color:  rgba(240,240,240,0.9);
-$section-fonts: 'Mate SC', serif;
+$section-fonts: 'Mate', serif;
 $person-transition-speed: 400ms;
 
 * {
@@ -38,7 +38,7 @@ header {
   height: 100vh;
   opacity: 80%;
   display: flex;
-  font-family: 'Mate SC', serif;
+  font-family: $section-fonts;
 
   .portfolio-text {
     font-family: 'Julius Sans One', sans-serif;
