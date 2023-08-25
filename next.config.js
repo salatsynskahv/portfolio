@@ -2,10 +2,7 @@
 const path= require('path')
 const nextConfig = {
     output: 'export',
-    images: {
-        loader: "default",
-        path: "/img",
-    }
+    basePath: '/portfolio',
 }
 
 module.exports = nextConfig
