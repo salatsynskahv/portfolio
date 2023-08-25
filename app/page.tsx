@@ -6,9 +6,6 @@ export default function Home() {
         <>
             <Head>
                 {/*<base href={process.env.BASE_PATH} />*/}
-                <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                <link rel="preconnect" href="https://fonts.gstatic.com"/>
-                <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Mate&display=swap" rel="stylesheet"/>
             </Head>
             <main>
                 <section className="hero-section" style={{backgroundImage: `url(${process.env.BASE_PATH}/img/hero-background.png)`}}>
