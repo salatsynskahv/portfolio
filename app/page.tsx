@@ -38,8 +38,8 @@ export default function Home() {
                     {/*<div className="photo"></div>*/}
                     <div className="person">
                         <div className="person_container">
-                            <img className="person_circle" src="/img/circle.png" alt=""/>
-                            <img className="person_img" src="/img/ganna-photo.png" alt="Ganna photo"/>
+                            <img className="person_circle" src="/img/circle.PNG" alt=""/>
+                            <img className="person_img" src="/img/ganna-photo.PNG" alt="Ganna photo"/>
                         </div>
                     </div>
                     <div className="info">
@@ -128,7 +128,7 @@ export default function Home() {
                     </div>
                     <div className="desc-link">
                         <a href="https://wishlist-client.onrender.com/" target="_blank">
-                            <img src="/img/wishlist-app.png" alt="wishlist screen" />
+                            <img src="/img/wishlist-app.PNG" alt="wishlist screen" />
                         </a>
                     </div>
                 </div>
@@ -148,7 +148,7 @@ export default function Home() {
                     </div>
                     <div className="desc-link">
                         <a href="https://food-delivery-3ft8.onrender.com/" target="_blank">
-                            <img src="/img/food-delivery-app.png" alt="food delivery app"/>
+                            <img src="/img/food-delivery-app.PNG" alt="food delivery app"/>
                         </a>
                     </div>
                 </div>
