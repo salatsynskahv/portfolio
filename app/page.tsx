@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Head from "next/head";
+import ProjectDescription from "@/app/components/project-desc";
 
 export default function Home() {
     return (
@@ -8,7 +9,8 @@ export default function Home() {
                 {/*<base href={process.env.BASE_PATH} />*/}
             </Head>
             <main>
-                <section className="hero-section" style={{backgroundImage: `url(${process.env.BASE_PATH}/img/hero-background.png)`}}>
+                <section className="hero-section"
+                         style={{backgroundImage: `url(${process.env.BASE_PATH}/img/hero-background.png)`}}>
                     <header>
                     <span>
                         <a href="#projects-section">Projects </a>
@@ -45,7 +47,8 @@ export default function Home() {
                         <div className="person">
                             <div className="person_container">
                                 <img className="person_circle" src={`${process.env.BASE_PATH}/img/circle.PNG`} alt=""/>
-                                <img className="person_img" src={`${process.env.BASE_PATH}/img/ganna-photo.PNG`} alt="Ganna photo"/>
+                                <img className="person_img" src={`${process.env.BASE_PATH}/img/ganna-photo.PNG`}
+                                     alt="Ganna photo"/>
                             </div>
                         </div>
                         <div className="info">
@@ -122,80 +125,43 @@ export default function Home() {
                 </section>
                 <section id="projects-section" className="project-section">
                     <h2>Projects</h2>
-                    <div className="desc-container">
-                        <div className="desc-info">
-                            Wishlist - app that allows you to save all your plans for shopping and share it with
-                            friends.
-                            App allows you to create custom witlists (tables with list of wishes) and share it with
-                            friends.
-                            Technologies used:
-                            <ul>
-                                <li>React</li>
-                                <li>MonogoDB</li>
-                                <li>NodeJs, Express, Mongoose</li>
-                                <li>Firebase</li>
-                            </ul>
-                            <br/>
-                            <a href="https://wishlist-client.onrender.com/" target="_blank"> Live Demo </a>
-                        </div>
-                        <div className="desc-link">
-                            <a href="https://wishlist-client.onrender.com/" target="_blank">
-                                <img src={`${process.env.BASE_PATH}/img/wishlist-app.PNG`} alt="wishlist screen"/>
-                            </a>
-                        </div>
-                    </div>
 
-                    <div className="desc-container">
 
-                        <div className="desc-info">
-                            Food Delivery service:
-                            <ul>
-                                <li>React</li>
-                                <li>MonogoDB</li>
-                                <li>NodeJs, Express, Mongoose</li>
-                                <li>Firebase</li>
-                            </ul>
-                            <br/>
-                            <a href="https://wishlist-client.onrender.com/" target="_blank"> Live Demo </a>
-                        </div>
-                        <div className="desc-link">
-                            <a href="https://food-delivery-3ft8.onrender.com/" target="_blank">
-                                <img src={`${process.env.BASE_PATH}img/food-delivery-app.PNG`} alt="food delivery app"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="desc-container">
-                        <div className="desc-info">
-                            Expense tracker
-                            <ul>
-                                <li>React</li>
-                                <li>MonogoDB</li>
-                                <li>NodeJs, Express, Mongoose</li>
-                                <li>Firebase</li>
-                            </ul>
-                            <br/>
-                            <a href="https://wishlist-client.onrender.com/" target="_blank"> Live Demo </a>
-                        </div>
-                        <div className="desc-link">
+                    <ProjectDescription
+                        description="Wishlist Magic App: Create and share custom wishlists with friends, making thoughtful gifting a breeze."
+                        githubLink="https://github.com/salatsynskahv/wishlist-client"
+                        link="https://wishlist-client.onrender.com/"
+                        image="wishlist-app.PNG"
+                        technologies={['react-js', 'react-redux', 'scss', 'nodejs',
+                            'express', 'mongoose', 'mongodb', 'firebase']}/>
 
-                        </div>
-                    </div>
-                    <div className="desc-container">
-                        <div className="desc-info">
-                            Online shop
-                            <ul>
-                                <li>React</li>
-                                <li>MonogoDB</li>
-                                <li>NodeJs, Express, Mongoose</li>
-                                <li>Firebase</li>
-                            </ul>
-                            <br/>
-                            <a href="https://wishlist-client.onrender.com/" target="_blank"> Live Demo </a>
-                        </div>
-                        <div className="desc-link">
+                    <ProjectDescription
+                        description="Finance Tracker"
+                        githubLink="https://github.com/salatsynskahv/finance-tracker"
+                        link={''}
+                        image={''}
+                        technologies={['react-js', 'next.js', 'scss', 'zustand', 'nodejs',
+                            'express', 'mongoose', 'mongodb']}/>
 
-                        </div>
-                    </div>
+                    {/*<div className="desc-container">*/}
+
+                    {/*    <div className="desc-info">*/}
+                    {/*        Food Delivery service:*/}
+                    {/*        <ul>*/}
+                    {/*            <li>React</li>*/}
+                    {/*            <li>MonogoDB</li>*/}
+                    {/*            <li>NodeJs, Express, Mongoose</li>*/}
+                    {/*            <li>Firebase</li>*/}
+                    {/*        </ul>*/}
+                    {/*        <br/>*/}
+                    {/*        <a href="https://wishlist-client.onrender.com/" target="_blank"> Live Demo </a>*/}
+                    {/*    </div>*/}
+                    {/*    <div className="desc-link">*/}
+                    {/*        <a href="https://food-delivery-3ft8.onrender.com/" target="_blank">*/}
+                    {/*            <img src={`${process.env.BASE_PATH}img/food-delivery-app.PNG`} alt="food delivery app"/>*/}
+                    {/*        </a>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                     <div className="rotate-180">
                         <svg className="waves-2" xmlns="http://www.w3.org/2000/svg"
                              xmlnsXlink="http://www.w3.org/1999/xlink"
