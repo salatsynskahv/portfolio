@@ -143,6 +143,12 @@ export default function Home() {
                         technologies={['react-js', 'next.js', 'scss', 'zustand', 'nodejs',
                             'express', 'mongoose', 'mongodb']}/>
 
+                    <ProjectDescription description="Food delivery"
+                                        link=""
+                                        image="" githubLink=""
+                                        technologies={['react-js', 'react-redux', 'scss', 'nodejs',
+                        'express', 'mongoose', 'mongodb', 'firebase']}/>
+
                     {/*<div className="desc-container">*/}
 
                     {/*    <div className="desc-info">*/}
@@ -179,7 +185,7 @@ export default function Home() {
                         </svg>
                     </div>
                 </section>
-                <footer style={{backgroundImage: `url(${process.env.BASE_PATH}/img/footer.jpg)`}}>
+                <footer style={{backgroundImage: `url(${process.env.BASE_PATH}/img/footer.png)`}}>
                 </footer>
             </main>
         </>
