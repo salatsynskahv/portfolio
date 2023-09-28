@@ -1,13 +1,14 @@
+import Slider from "@/app/components/Slider";
 
 type ProjectProps = {
     description: string,
     link: string,
-    image: string,
+    images: string[],
     githubLink: string,
     technologies: string[]
 
 }
-export default function ProjectDescription({description, link, githubLink, image, technologies}: ProjectProps) {
+export default function ProjectDescription({description, link, githubLink, images, technologies}: ProjectProps) {
 
     const listOfTechnologies = () => {
         return technologies.map(value => <span className="labels"> {value} </span>);
@@ -32,7 +33,8 @@ export default function ProjectDescription({description, link, githubLink, image
             </div>
             <div className="desc-link">
                 <a href={link} target="_blank">
-                    <img src={`${process.env.BASE_PATH}/img/${image}`} alt="wishlist screen"/>
+                    {/*<img src={`${process.env.BASE_PATH}/img/${image}`} alt="wishlist screen"/>*/}
+                    <Slider images={images}></Slider>
                 </a>
             </div>
         </div>

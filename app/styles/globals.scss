@@ -344,46 +344,6 @@ footer {
   height: 150px;
 }
 
-@media screen and (max-width: 768px) {
-  .hero-section {
-    height: 30vh;
-    flex-direction: column;
-    justify-content: space-between;
 
-    header {
-      margin: 20px auto;
-    }
-
-    .portfolio-text {
-      font-size: 2rem;
-    }
-  }
-
-  .about-me-section {
-    .container {
-      flex-direction: column;
-
-      .info {
-        width: 98%;
-      }
-    }
-
-    .cv-info {
-      flex-direction: column;
-      
-
-      .column {
-        width: 100%;
-      }
-    }
-  }
-
-  .project-section {
-    .desc-link {
-      position: absolute;
-      opacity: 0.1;
-      width: 85%;
-    }
-  }
-
-}
+@import "slider";
+@import "mobile";

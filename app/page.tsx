@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Head from "next/head";
 import ProjectDescription from "@/app/components/project-desc";
+import Slider from "@/app/components/Slider";
 
 export default function Home() {
     return (
@@ -131,43 +132,20 @@ export default function Home() {
                         description="Wishlist Magic App: Create and share custom wishlists with friends, making thoughtful gifting a breeze."
                         githubLink="https://github.com/salatsynskahv/wishlist-client"
                         link="https://wishlist-client.onrender.com/"
-                        image="wishlist-app.PNG"
+                        images={["wishlist-app.PNG"]}
                         technologies={['react-js', 'react-redux', 'scss', 'nodejs',
                             'express', 'mongoose', 'mongodb', 'firebase']}/>
 
                     <ProjectDescription
-                        description="Finance Tracker"
+                        description="Finance Tracker - small web application that allows users categorize and analize their expences"
                         githubLink="https://github.com/salatsynskahv/finance-tracker"
                         link={''}
-                        image={''}
+                        images={['finance-tracker/one.png', 'finance-tracker/two.png',
+                            'finance-tracker/three.png']}
                         technologies={['react-js', 'next.js', 'scss', 'zustand', 'nodejs',
                             'express', 'mongoose', 'mongodb']}/>
 
-                    <ProjectDescription description="Food delivery"
-                                        link=""
-                                        image="" githubLink=""
-                                        technologies={['react-js', 'react-redux', 'scss', 'nodejs',
-                        'express', 'mongoose', 'mongodb', 'firebase']}/>
 
-                    {/*<div className="desc-container">*/}
-
-                    {/*    <div className="desc-info">*/}
-                    {/*        Food Delivery service:*/}
-                    {/*        <ul>*/}
-                    {/*            <li>React</li>*/}
-                    {/*            <li>MonogoDB</li>*/}
-                    {/*            <li>NodeJs, Express, Mongoose</li>*/}
-                    {/*            <li>Firebase</li>*/}
-                    {/*        </ul>*/}
-                    {/*        <br/>*/}
-                    {/*        <a href="https://wishlist-client.onrender.com/" target="_blank"> Live Demo </a>*/}
-                    {/*    </div>*/}
-                    {/*    <div className="desc-link">*/}
-                    {/*        <a href="https://food-delivery-3ft8.onrender.com/" target="_blank">*/}
-                    {/*            <img src={`${process.env.BASE_PATH}img/food-delivery-app.PNG`} alt="food delivery app"/>*/}
-                    {/*        </a>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
                     <div className="rotate-180">
                         <svg className="waves-2" xmlns="http://www.w3.org/2000/svg"
                              xmlnsXlink="http://www.w3.org/1999/xlink"
