@@ -23,23 +23,20 @@ export default function Home() {
                     <div className="portfolio-text">
                         Portfolio
                     </div>
-
-                    <div>
-                        <svg className="waves" xmlns="http://www.w3.org/2000/svg"
-                             xmlnsXlink="http://www.w3.org/1999/xlink"
-                             viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
-                            <defs>
-                                <path id="gentle-wave"
-                                      d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
-                            </defs>
-                            <g className="parallax">
-                                <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(240,240,240,0.7)"/>
-                                <use xlinkHref="#gentle-wave" x="48" y="3" fill="rgba(240,240,240,0.5)"/>
-                                <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(240,240,240,0.3)"/>
-                                <use xlinkHref="#gentle-wave" x="48" y="7" fill="rgba(240,240,240,0.9)"/>
-                            </g>
-                        </svg>
-                    </div>
+                    <svg className="waves" xmlns="http://www.w3.org/2000/svg"
+                         xmlnsXlink="http://www.w3.org/1999/xlink"
+                         viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
+                        <defs>
+                            <path id="gentle-wave"
+                                  d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
+                        </defs>
+                        <g className="parallax">
+                            <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(240,240,240,0.7)"/>
+                            <use xlinkHref="#gentle-wave" x="48" y="3" fill="rgba(240,240,240,0.5)"/>
+                            <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(240,240,240,0.3)"/>
+                            <use xlinkHref="#gentle-wave" x="48" y="7" fill="rgba(240,240,240,0.9)"/>
+                        </g>
+                    </svg>
                 </section>
 
                 <section id="resume-section" className="about-me-section">
@@ -74,8 +71,8 @@ export default function Home() {
                             <br/>
                             <h3>Skills</h3>
                             <p>Programming languages and technologies:
-                                JavaScript (React, Angular) - 1.5 year experience.
-                                Java (Java core, Java EE, Spring Framework) - 5 years experience.</p>
+                                JavaScript (React, Angular)
+                                Java (Java core, Java EE, Spring Framework)</p>
                             <p>Web technologies: HTML, CSS (SASS).</p>
                             <p>Testing Frameworks: Cypress</p>
                             <p>CMS: Sanity Studio, Liferay</p>
@@ -139,7 +136,7 @@ export default function Home() {
                     <ProjectDescription
                         description="Finance Tracker - small web application that allows users categorize and analize their expences"
                         githubLink="https://github.com/salatsynskahv/finance-tracker"
-                        link={''}
+                        link="https://finance-tracker-frontend-cyan.vercel.app"
                         images={['finance-tracker/one.png', 'finance-tracker/two.png',
                             'finance-tracker/three.png']}
                         technologies={['react-js', 'next.js', 'scss', 'zustand', 'nodejs',
