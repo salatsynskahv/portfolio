@@ -1,9 +1,19 @@
-import Image from 'next/image'
+'use client';
 import Head from "next/head";
 import ProjectDescription from "@/app/components/project-desc";
-import Slider from "@/app/components/Slider";
+import {workDescs} from "@/app/fixture-workdesc";
+import {WorkDescription} from "@/app/components/work-description";
+import {WorkDescriptionObj} from "@/app/interfaces/WorkDescriptionObj";
+import {useEffect, useState} from "react";
 
 export default function Home() {
+
+    const [workDesc, setWorkDesc] = useState<WorkDescriptionObj[]>([]);
+
+    useEffect(() => {
+        setWorkDesc(workDescs as WorkDescriptionObj[]);
+    }, []);
+
     return (
         <>
             <Head>
@@ -78,6 +88,13 @@ export default function Home() {
                             <p>CMS: Sanity Studio, Liferay</p>
                             <p>Build systems: Maven, Ant (+Ivy).</p>
                             <p>Tools: JntelliJ IDEA, Tortoise SVN, SQL Developer, Postman.</p>
+
+                            <h3>Languages</h3>
+                            <ul>
+                                <li>Ukrainian - Native</li>
+                                <li>English - Intermediate</li>
+                                <li>Polish - Basic</li>
+                            </ul>
                         </div>
                         <div className="column">
                             <h3>Education</h3>
@@ -96,27 +113,11 @@ export default function Home() {
                             </p>
                             <br/>
                             <h3>Work experience</h3>
-                            <p>
-                                Netcracker 2014 / present
-                                Implemented new features of an existing system, contributing to its enhanced
-                                functionality
-                                and usability.
-                                Estimated production times and staging requirements for new designs, enabling the team
-                                to
-                                deliver projects on time and within budget.
-                                Troubleshot new and existing product problems involving designs, materials, or
-                                processes,
-                                ensuring smooth and efficient operation of the system.
-                                Wrote tech design and detailed design specifications, providing an overview of the
-                                architecture, system functions, API, and extension points for product customization.
-                            </p>
+                            {
+                                workDesc.map(workDesc => {
+                                    return <WorkDescription workDesc={workDesc}/>;
+                                })}
                             <br/>
-                            <h3>Languages</h3>
-                            <ul>
-                                <li>Ukrainian - Native</li>
-                                <li>English - Intermediate</li>
-                                <li>Polish - Basic</li>
-                            </ul>
                         </div>
                     </div>
 
@@ -129,18 +130,35 @@ export default function Home() {
                         description="Wishlist Magic App: Create and share custom wishlists with friends, making thoughtful gifting a breeze."
                         githubLink="https://github.com/salatsynskahv/wishlist-client"
                         link="https://wishlist-client.onrender.com/"
-                        images={["wishlist-app.PNG"]}
+                        images={["wishlist/wishlist-screenshot1.jpeg"]}
                         technologies={['react-js', 'react-redux', 'scss', 'nodejs',
                             'express', 'mongoose', 'mongodb', 'firebase']}/>
 
                     <ProjectDescription
-                        description="Finance Tracker - small web application that allows users categorize and analize their expences"
-                        githubLink="https://github.com/salatsynskahv/finance-tracker"
-                        link="https://finance-tracker-frontend-cyan.vercel.app"
-                        images={['finance-tracker/one.png', 'finance-tracker/two.png',
-                            'finance-tracker/three.png']}
-                        technologies={['react-js', 'next.js', 'scss', 'zustand', 'nodejs',
-                            'express', 'mongoose', 'mongodb']}/>
+                        description="Aster Silk - online shop of Ukrainian clothing brand"
+                        githubLink=""
+                        link="https://astersilk.com/"
+                        images={['aster-silk/aster_silk_screenshot1.jpeg', 'aster-silk/aster_silk_screenshot2.jpeg', 'aster-silk/aster_silk_screenshot3.jpeg']}
+                        technologies={['wordPress', 'wooCommerce', 'css', 'php']}/>
+
+
+                    {/*<ProjectDescription*/}
+                    {/*    description="Finance Tracker - small web application that allows users categorize and analize their expences"*/}
+                    {/*    githubLink="https://github.com/salatsynskahv/finance-tracker"*/}
+                    {/*    link="https://finance-tracker-frontend-cyan.vercel.app"*/}
+                    {/*    images={['finance-tracker/one.png', 'finance-tracker/two.png',*/}
+                    {/*        'finance-tracker/three.png']}*/}
+                    {/*    technologies={['react-js', 'next.js', 'scss', 'zustand', 'nodejs',*/}
+                    {/*        'express', 'mongoose', 'mongodb']}*/}
+                    {/*/>*/}
+
+                    {/*<ProjectDescription*/}
+                    {/*    description="Test task for interview. Draggable dynamic tree with navbar"*/}
+                    {/*    githubLink="https://github.com/salatsynskahv/categories-tree"*/}
+                    {/*    link="https://categories-tree.vercel.app/"*/}
+                    {/*    images={['finance-tracker/one.png']}*/}
+                    {/*    technologies={['react-js', 'typescript', 'scss']}*/}
+                    {/*/>*/}
 
 
                     <div className="rotate-180">

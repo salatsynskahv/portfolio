@@ -14,7 +14,6 @@ export default function ProjectDescription({description, link, githubLink, image
         return technologies.map(value => <span className="labels"> {value} </span>);
     }
 
-
     return (
         <div className="desc-container">
             <div className="desc-info">
@@ -33,7 +32,6 @@ export default function ProjectDescription({description, link, githubLink, image
             </div>
             <div className="desc-link">
                 <a href={link} target="_blank">
-                    {/*<img src={`${process.env.BASE_PATH}/img/${image}`} alt="wishlist screen"/>*/}
                     <Slider images={images}></Slider>
                 </a>
             </div>

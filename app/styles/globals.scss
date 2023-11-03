@@ -21,9 +21,10 @@
 @tailwind utilities;
 
 $primary-color: #454b45;
-$secondary-green: #d9dada;
+$secondary-gray-darker: #a4a4a4;
+$secondary-gray: #d9dada;
 $secondary-light-gray: #f0f0f0;
-$section-gray-color:  rgba(240,240,240,0.9);
+$section-gray-color: rgba(240, 240, 240, 0.9);
 $section-fonts: 'Mate', serif;
 $person-transition-speed: 400ms;
 
@@ -72,7 +73,7 @@ header {
   font-size: 1.4rem;
   padding: 1em;
   height: 100%;
-  background-color: rgba(240,240,240,0.9);
+  background-color: rgba(240, 240, 240, 0.9);
 
   .container {
     display: flex;
@@ -92,7 +93,7 @@ header {
     .person {
       position: relative;
       max-width: 15rem;
-      margin-inline:auto;
+      margin-inline: auto;
     }
 
     .person_container {
@@ -126,7 +127,7 @@ header {
     }
 
     .person_container:hover .person_img {
-      transform: scale(1.15) translateY(-0.8rem );
+      transform: scale(1.15) translateY(-0.8rem);
     }
 
 
@@ -153,6 +154,7 @@ header {
         font-weight: bold;
         margin: 20px 0;
       }
+
       p {
         font-size: 1.2rem;
       }
@@ -181,8 +183,8 @@ header {
     align-items: center;
     border-radius: 5px;
     margin: 4rem auto;
-    background: rgb(208,214,214);
-    box-shadow: 10px 10px 20px $secondary-green;
+    background: rgb(208, 214, 214);
+    box-shadow: 10px 10px 20px $secondary-gray;
     padding: 1rem;
     transition: transform 500ms ease-in-out;
 
@@ -228,6 +230,7 @@ header {
         border-radius: 5px;
         opacity: 0.7;
       }
+
       img:hover {
         opacity: 1;
       }
@@ -237,11 +240,11 @@ header {
 
   .desc-container:nth-child(even) {
     //margin-left: 10%;
-    background: linear-gradient(156deg, rgb(231, 234, 234) 0%, rgba(241,241,241,1) 100%);
+    background: linear-gradient(156deg, rgb(231, 234, 234) 0%, rgba(241, 241, 241, 1) 100%);
   }
 
   .desc-container:nth-child(odd) {
-    background: linear-gradient(156deg, rgba(241,241,241,1) 0, rgb(228, 231, 231) 100%);
+    background: linear-gradient(156deg, rgba(241, 241, 241, 1) 0, rgb(228, 231, 231) 100%);
   }
 
   .desc-container:hover {
@@ -258,83 +261,116 @@ header {
 }
 
 .waves {
-  position:absolute;
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height:15vh;
+  height: 15vh;
   //margin-bottom:-7px; /*Fix for safari gap*/
-  min-height:100px;
-  max-height:150px;
+  min-height: 100px;
+  max-height: 150px;
   z-index: 10;
 }
 
 .waves-2 {
-  position:absolute;
+  position: absolute;
   top: -150px;
   left: 0;
   width: 100%;
-  height:15vh;
+  height: 15vh;
   //margin-bottom:-7px; /*Fix for safari gap*/
-  min-height:100px;
-  max-height:150px;
+  min-height: 100px;
+  max-height: 150px;
   z-index: 10;
 }
 
 
 .content {
-  position:relative;
-  height:20vh;
-  text-align:center;
+  position: relative;
+  height: 20vh;
+  text-align: center;
   background-color: white;
 }
 
 /* Animation */
 
 .parallax > use {
-  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
 }
+
 .parallax > use:nth-child(1) {
   animation-delay: -2s;
   animation-duration: 7s;
 }
+
 .parallax > use:nth-child(2) {
   animation-delay: -3s;
   animation-duration: 10s;
 }
+
 .parallax > use:nth-child(3) {
   animation-delay: -4s;
   animation-duration: 13s;
 }
+
 .parallax > use:nth-child(4) {
   animation-delay: -5s;
   animation-duration: 20s;
 }
+
 @keyframes move-forever {
   0% {
-    transform: translate3d(-90px,0,0);
+    transform: translate3d(-90px, 0, 0);
   }
   100% {
-    transform: translate3d(85px,0,0);
+    transform: translate3d(85px, 0, 0);
   }
 }
+
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
-    height:40px;
-    min-height:40px;
+    height: 40px;
+    min-height: 40px;
   }
   .content {
-    height:30vh;
+    height: 30vh;
   }
   h1 {
-    font-size:24px;
+    font-size: 24px;
   }
 }
 
 .rotate-180 {
   transform: rotate(180deg);
   z-index: 4;
+}
+
+.work-experience {
+  margin-top: 1rem;
+
+  ul {
+    list-style: revert;
+    margin-top: 1rem;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+
+  h5 {
+
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: $secondary-gray-darker;
+  }
+
+  h6 {
+    font-size: 1.3rem;
+    color: $secondary-gray-darker;
+  }
+
 }
 
 footer {
