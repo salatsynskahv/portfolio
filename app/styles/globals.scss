@@ -1,20 +1,4 @@
-//@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Mate&display=swap');
-
-@font-face {
-  font-family: 'Julius Sans One';
-  font-style: NORMAL;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/portfolio/fonts/JuliusSansOne-Regular.ttf") format('truetype');
-}
-
-@font-face {
-  font-family: 'Mate';
-  font-style: NORMAL;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/portfolio/fonts/Mate-Regular.ttf") format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Mate&display=swap');
 
 @tailwind base;
 @tailwind components;
