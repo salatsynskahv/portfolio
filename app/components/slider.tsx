@@ -4,12 +4,13 @@ import Image from "next/image";
 
 
 // @ts-ignore
-const Slider = ({images, delay = 2000}) => {
+const Slider = ({images, delay = 2000} : {images: string[]}) => {
     const [index, setIndex] = useState(0);
     const timeoutRef = useRef(null);
 
     function resetTimeout() {
         if(!timeoutRef.current){
+            // @ts-ignore
             clearTimeout(timeoutRef.current);
         }
     }

@@ -5,6 +5,7 @@ import {workDescs} from "@/app/fixture-workdesc";
 import {WorkDescription} from "@/app/components/work-description";
 import {WorkDescriptionObj} from "@/app/interfaces/WorkDescriptionObj";
 import {useEffect, useState} from "react";
+import {juliusSansOne, mate} from "@/app/fonts";
 
 export default function Home() {
 
@@ -20,7 +21,7 @@ export default function Home() {
                 {/*<base href={process.env.BASE_PATH} />*/}
             </Head>
             <main>
-                <section className="hero-section"
+                <section className={`hero-section ${mate.className}`}
                          style={{backgroundImage: `url(${process.env.BASE_PATH}/img/hero-background.png)`}}>
                     <header>
                     <span>
@@ -30,7 +31,7 @@ export default function Home() {
                         <a href="#resume-section">Resume </a>
                     </span>
                     </header>
-                    <div className="portfolio-text">
+                    <div className={`${juliusSansOne.className} portfolio-text`}>
                         Portfolio
                     </div>
                     <svg className="waves" xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +50,7 @@ export default function Home() {
                     </svg>
                 </section>
 
-                <section id="resume-section" className="about-me-section">
+                <section id="resume-section" className={`${mate.className} about-me-section`}>
                     <div className="container">
                         {/*<div className="photo"></div>*/}
                         <div className="person">
@@ -133,6 +134,14 @@ export default function Home() {
                         images={["wishlist/wishlist-screenshot1.jpeg"]}
                         technologies={['react-js', 'react-redux', 'scss', 'nodejs',
                             'express', 'mongoose', 'mongodb', 'firebase']}/>
+
+                    <ProjectDescription
+                        description="Test task for FullStack Engineer"
+                        githubLink="https://github.com/salatsynskahv/botscrew-test-fronend"
+                        link="https://botcrew-test-fronend-production.up.railway.app/"
+                        images={['botscrew/botscrew.png']}
+                        technologies={['Java', 'Spring Data JPA', 'React', 'Tailwind']}/>
+
 
                     <ProjectDescription
                         description="Aster Silk - online shop of Ukrainian clothing brand"

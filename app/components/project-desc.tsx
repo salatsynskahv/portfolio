@@ -1,4 +1,5 @@
-import Slider from "@/app/components/Slider";
+import Slider from "@/app/components/slider";
+import {mate} from "@/app/fonts";
 
 type ProjectProps = {
     description: string,
@@ -15,7 +16,7 @@ export default function ProjectDescription({description, link, githubLink, image
     }
 
     return (
-        <div className="desc-container">
+        <div className={`${mate.className} desc-container`}>
             <div className="desc-info">
                 <div> {description}</div>
 
