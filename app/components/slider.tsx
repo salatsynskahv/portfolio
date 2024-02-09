@@ -1,5 +1,6 @@
 "use client";
 import {useEffect, useRef, useState} from "react";
+import Image from "next/image";
 
 
 // @ts-ignore
@@ -40,7 +41,7 @@ const Slider = ({images, delay = 2000}) => {
                         className="slide"
                         key={index}
                     >
-                        <img src={`${process.env.BASE_PATH}/img/${image}`} alt="finance-tracker screen"/>
+                        <Image src={`/img/${image}`} alt="finance-tracker screen" width="700" height="600"/>
                     </div>
                 ))}
             </div>
