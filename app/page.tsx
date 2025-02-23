@@ -138,9 +138,9 @@ export default function Home() {
                     <ProjectDescription
                         description="Test task for Angular Developer position. Develop dahsboard that renders charts
                         of historical and realtime prices"
-                        githubLink="https://github.com/salatsynskahv/botscrew-test-fronend"
-                        link="https://botcrew-test-fronend-production.up.railway.app/"
-                        images={['botscrew/botscrew.png']}
+                        githubLink="https://github.com/salatsynskahv/fintaChart"
+                        link="https://finta-chart-v1pb-12nzobvc8-salatsynskahvs-projects.vercel.app"
+                        images={['fintachart/fintachart.png']}
                         technologies={['Angular', 'RxJs',]}/>
 
                     <ProjectDescription
