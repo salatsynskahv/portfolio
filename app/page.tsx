@@ -126,14 +126,22 @@ export default function Home() {
                 <section id="projects-section" className="project-section">
                     <h2>Projects</h2>
 
+                    {/*<ProjectDescription*/}
+                    {/*    description="Wishlist Magic App: Create and share custom wishlists with friends, making thoughtful gifting a breeze."*/}
+                    {/*    githubLink="https://github.com/salatsynskahv/wishlist-client"*/}
+                    {/*    link="https://wishlist-client.onrender.com/"*/}
+                    {/*    images={["wishlist/wishlist-screenshot1.jpeg"]}*/}
+                    {/*    technologies={['react-js', 'react-redux', 'scss', 'nodejs',*/}
+                    {/*        'express', 'mongoose', 'mongodb', 'firebase']}/>*/}
+
 
                     <ProjectDescription
-                        description="Wishlist Magic App: Create and share custom wishlists with friends, making thoughtful gifting a breeze."
-                        githubLink="https://github.com/salatsynskahv/wishlist-client"
-                        link="https://wishlist-client.onrender.com/"
-                        images={["wishlist/wishlist-screenshot1.jpeg"]}
-                        technologies={['react-js', 'react-redux', 'scss', 'nodejs',
-                            'express', 'mongoose', 'mongodb', 'firebase']}/>
+                        description="Test task for Angular Developer position. Develop dahsboard that renders charts
+                        of historical and realtime prices"
+                        githubLink="https://github.com/salatsynskahv/botscrew-test-fronend"
+                        link="https://botcrew-test-fronend-production.up.railway.app/"
+                        images={['botscrew/botscrew.png']}
+                        technologies={['Angular', 'RxJs',]}/>
 
                     <ProjectDescription
                         description="Test task for FullStack Engineer"
@@ -143,12 +151,12 @@ export default function Home() {
                         technologies={['Java', 'Spring Data JPA', 'React', 'Tailwind']}/>
 
 
-                    <ProjectDescription
-                        description="Aster Silk - online shop of Ukrainian clothing brand"
-                        githubLink=""
-                        link="https://astersilk.com/"
-                        images={['aster-silk/aster_silk_screenshot1.jpeg', 'aster-silk/aster_silk_screenshot2.jpeg', 'aster-silk/aster_silk_screenshot3.jpeg']}
-                        technologies={['wordPress', 'wooCommerce', 'css', 'php']}/>
+                    {/*<ProjectDescription*/}
+                    {/*    description="Aster Silk - online shop of Ukrainian clothing brand"*/}
+                    {/*    githubLink=""*/}
+                    {/*    link="https://astersilk.com/"*/}
+                    {/*    images={['aster-silk/aster_silk_screenshot1.jpeg', 'aster-silk/aster_silk_screenshot2.jpeg', 'aster-silk/aster_silk_screenshot3.jpeg']}*/}
+                    {/*    technologies={['wordPress', 'wooCommerce', 'css', 'php']}/>*/}
 
 
                     {/*<ProjectDescription*/}
