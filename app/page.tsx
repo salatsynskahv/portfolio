@@ -31,9 +31,9 @@ export default function Home() {
                         <a href="#resume-section">Resume </a>
                     </span>
                     </header>
-                    <div className={`${juliusSansOne.className} portfolio-text`}>
-                        Portfolio
-                    </div>
+                    {/*<div className={`${juliusSansOne.className} portfolio-text`}>*/}
+                    {/*    Portfolio*/}
+                    {/*</div>*/}
                     <svg className="waves" xmlns="http://www.w3.org/2000/svg"
                          xmlnsXlink="http://www.w3.org/1999/xlink"
                          viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
@@ -82,13 +82,13 @@ export default function Home() {
                             <br/>
                             <h3>Skills</h3>
                             <p>Programming languages and technologies:
-                                JavaScript (React, Angular)
+                                JavaScript,<br/>
+                                Angular (RxJs, NgRX),<br/>
                                 Java (Java core, Java EE, Spring Framework)</p>
                             <p>Web technologies: HTML, CSS (SASS).</p>
-                            <p>Testing Frameworks: Cypress</p>
+                            <p>Testing Frameworks: Testcafe, Cypress</p>
                             <p>CMS: Sanity Studio, Liferay</p>
-                            <p>Build systems: Maven, Ant (+Ivy).</p>
-                            <p>Tools: JntelliJ IDEA, Tortoise SVN, SQL Developer, Postman.</p>
+                            <p>Tools: IntelliJ IDEA, Tortoise SVN, SQL Developer, Postman.</p>
 
                             <h3>Languages</h3>
                             <ul>
@@ -103,11 +103,7 @@ export default function Home() {
                                 <b>National University of 'Kyiv Mohyla Academy' </b>
                                 <br/>
                                 Bachelor of Science: Applied Mathematics
-                                2009 / 2013
-                                <br/><br/>
-
-                                <b>Netcracker Training Center</b> 2012
-                                <br/><br/>
+                                2009 / 2013<br/> <br/>
                                 <b>National University of 'Kyiv Mohyla Academy' </b><br/>
                                 Master of Science: Systems and Methods of Decision Making
                                 2013 / 2015
